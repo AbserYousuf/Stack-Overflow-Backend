@@ -12,7 +12,7 @@ dotenv.config()
 app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
 const corsOptions = {
-    origin: process.env.FRONTEND_URL,
+    origin: '*,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true
 };
